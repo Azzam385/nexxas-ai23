@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXXAS AI</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- LOGIN PAGE -->
+<div class="loginPage" id="loginPage">
+
+  <div class="loginBox">
+
+    <div class="loginGlow"></div>
+
+    <h1>NEXXAS AI</h1>
+
+    <p>Cyber Red AI System</p>
+
+    <input type="email" id="email" placeholder="Masukan Gmail">
+
+    <input type="password" id="password" placeholder="Masukan Password">
+
+    <button id="loginBtn">
+      Login
+    </button>
+
+    <div class="socialLogin">
+
+      <button id="googleBtn">
+        Login Google
+      </button>
+
+      <button id="githubBtn">
+        Login Github
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- LOADING PAGE -->
+<div class="loadingPage" id="loadingPage">
+
+  <div class="loaderCircle"></div>
+
+  <h2 id="loadingText">0%</h2>
+
+</div>
+
+<!-- MAIN APP -->
+<div class="mainApp" id="mainApp">
+
+  <div class="bgGlow"></div>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="logoBox">
+      <h1>NEXXAS AI</h1>
+      <p>Realtime AI Assistant</p>
+    </div>
+
+    <button class="newChat">
+      + New Chat
+    </button>
+
+    <div class="history">
+
+      <div class="historyItem">
+        AI Chat
+      </div>
+
+      <div class="historyItem">
+        Generate Image
+      </div>
+
+      <div class="historyItem">
+        Cyber Security
+      </div>
+
+    </div>
+
+  </aside>
+
+  <!-- CHAT -->
+  <main class="chatSection">
+
+    <div class="topbar">
+
+      <div>
+        <h2>NEXXAS AI</h2>
+        <span>Groq Realtime AI</span>
+      </div>
+
+      <div class="menuArea">
+
+        <div class="profileMini">
+          <img id="profileImage" src="https://i.imgur.com/6VBx3io.png">
+        </div>
+
+        <button id="hamburgerBtn">
+          ☰
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- HAMBURGER MENU -->
+    <div class="hamburgerMenu" id="hamburgerMenu">
+
+  <h3>MENU SYSTEM</h3>
+
+  <button class="menuButton" id="chatMenu">
+    💬 Chat
+  </button>
+
+  <button class="menuButton" id="profileBtn">
+    👤 Profile
+  </button>
+
+  <button class="menuButton" id="monitorBtn">
+    📊 Realtime Monitor
+  </button>
+
+  <a
+    href="https://wa.me/6283173468064"
+    target="_blank"
+    class="menuLink"
+  >
+    📱 WhatsApp Developer
+  </a>
+
+  <a
+    href="https://www.instagram.com/indxkzy?igsh=bDRrZWk1ajVzb3hl"
+    target="_blank"
+    class="menuLink"
+  >
+    📸 Instagram Developer
+  </a>
+
+</div>
+    <!-- PROFILE POPUP -->
+<div class="profilePopup" id="profilePopup">
+
+  <button id="closeProfile">
+    ✕
+  </button>
+
+  <h2>Profile Pengguna</h2>
+
+  <input type="file" id="uploadProfile">
+
+  <input
+    type="text"
+    id="username"
+    placeholder="Nama Pengguna"
+  >
+
+  <textarea
+    id="bio"
+    placeholder="Bio"
+  ></textarea>
+
+  <input type="date" id="birthDate">
+
+  <button id="saveProfile">
+    Save Profile
+  </button>
+
+</div>
+<!--- MONITOR PANEL -->
+<div class="monitorPopup" id="monitorPopup">
+
+  <button id="closeMonitor">
+    ✕
+  </button>
+
+  <h2>Realtime Monitor</h2>
+
+  <div class="statsBox">
+
+    <div class="statCard">
+      <h3>Total Chat</h3>
+      <span id="chatCount">0</span>
+    </div>
+
+    <div class="statCard">
+      <h3>Online User</h3>
+      <span id="onlineCount">1</span>
+    </div>
+
+  </div>
+
+  <canvas id="chartCanvas"></canvas>
+
+</div>
+    <!-- CHAT AREA -->
+    <div class="chatContainer" id="chatContainer">
+
+      <div class="aiMessage">
+        Halo 🚀 Saya siap membantu.
+      </div>
+
+    </div>
+
+    <div class="typing" id="typing">
+      AI sedang mengetik...
+    </div>
+
+    <!-- INPUT -->
+    <div class="inputArea">
+
+      <textarea
+        id="prompt"
+        placeholder="Ketik pesan..."
+      ></textarea>
+
+      <button id="voiceBtn">
+        🎤
+      </button>
+
+      <button id="sendBtn">
+        Send
+      </button>
+
+    </div>
+
+  </main>
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="script.js"></script>
+
+<footer>
+© 2026 NEXXAS AI• Clean Modern UI
+</footer>
+
+</body>
+</html>
